@@ -1,46 +1,140 @@
-/****** Main Styling ******/
+/* Main Styling */
 
 body {
 	font-family: 'Roboto', sans-serif;
 	font-size: 16px;
 	color: #222;
-	background-color: #FaFaFa;
+	background-color: #fafafa;
 	text-align: center;
 	line-height: 1.4em;
-}
-
-.container {
-	padding: 0;
+  }
+  
+  header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px;
+	background-color: #fff;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	text-align: left;
+  }
+  
+  
+  nav {
+	display: flex;
+  }
+  
+  nav a {
+	margin: 0 10px;
+	text-decoration: none;
+	color: #2574a9;
+	font-weight: bold;
+	transition: color 0.2s ease-in-out;
+  }
+  
+  nav a:hover {
+	color: #1e5181;
+  }
+  
+  main {
+	max-width: 800px;
+	margin: 40px auto;
+	padding: 0 20px;
+  }
+  
+  h1 {
+	margin: 0;
+  }
+  
+  h2 {
 	margin-top: 40px;
-}
-
-h3 {
-  margin-top: 30px;
-}
-
-hr {
-	margin: 25px;
-}
-
-.footer {
-	margin-top: 40px;
-}
-
-code {
-  font-family: monospace;
-  padding: 2px;
-  color: black;
-  background-color: #fff;
-}
-
-ul {
+  }
+  
+  ul {
 	list-style-type: none;
+	margin: 0;
+	padding: 0;
+  }
+  
+  li {
+	margin-bottom: 1em;
+  }
+  
+  a {
+	color: #2574a9;
+	text-decoration: none;
+	transition: color 0.2s ease-in-out;
+  }
+  
+  a:hover {
+	color: #1e5181;
+  }
+  
+  pre {
+	background-color: #eee;
+	padding: 20px;
+	border-radius: 5px;
+	overflow-x: auto;
+	text-align: left;
+  }
+  
+  
+  
+  code {
+    font-family: monospace;
+    padding: 2px;
+    color: black;
+    background-color: #fff;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
 }
 
-li {
-  margin-bottom: 0.5em;
-}
-
-a {
-	color: #2574A9;
-}
+  
+  
+  footer {
+	margin-top: 40px;
+	padding: 20px;
+	background-color: #fff;
+	box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  footer p {
+	margin: 0;
+	font-size: 14px;
+	color: #777;
+  }
+  
+  @media screen and (max-width: 768px) {
+	header {
+	  flex-direction: column;
+	  padding: 20px 0;
+	}
+	
+	nav {
+	  margin-top: 20px;
+	}
+	
+	nav a {
+	  margin: 0 5px;
+	  font-size: 14px;
+	}
+	
+	main {
+	  margin: 20px auto;
+	  padding: 0 10px;
+	}
+	
+	pre {
+	  font-size: 14px;
+	}
+	
+	footer {
+	  padding: 10px;
+	}
+	
+	footer p {
+	  font-size: 12px;
+	}
+  }
+  

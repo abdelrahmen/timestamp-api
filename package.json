@@ -1,4 +1,5 @@
 {
+  "type": "module",
   "name": "timestamp-api",
   "version": "1.0.0",
   "description": "a timestamp api which gives you the current date and time in many different formats, also a converter from one format to another",
